@@ -1,10 +1,6 @@
 Codeception Instant Messaging (IM) Module
 =========================================
 
-[![License](http://img.shields.io/packagist/l/nathanmac/im-codeception-module.svg)](https://github.com/nathanmac/im-codeception-module/blob/master/LICENSE.md)
-[![Release](http://img.shields.io/github/release/nathanmac/im-codeception-module.svg)](https://github.com/nathanmac/im-codeception-module/releases)
-
-
 This module will let you test messages that are sent during your Codeception
 acceptance tests.
 
