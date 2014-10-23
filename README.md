@@ -72,8 +72,134 @@ $I->sendInstantMessage("Testing has been completed with no issues.", array('colo
 ```
 
 ## Actions
+### sendInstantMessage
+Simple method for sending a messages to an messaging service.
 
-TBA
+```php
+<?php
+$I->sendInstantMessage('Testing message to be send to IM service.', array('color' => 'red', 'notify' => true);
+?>
+```
+
+* Param string $message Message to be sent.
+* Param array $options Depends on service, for HipChat these include the color and the notify option.
+
+### grabLastInstantMessage
+Grabber method to return the last messages on the service.
+
+```php
+<?php
+$messages = $I->grabLastInstantMessage();
+?>
+```
+
+### grabLastInstantMessageFrom
+Grabber method to return the from field of the last message.
+
+```php
+<?php
+$from = $this->grabLastInstantMessageFrom();
+?>
+```
+     
+### seeInLastInstantMessageFrom
+Checks whether the last messages from address matches.
+
+```php
+<?php
+$I->seeInLastInstantMessageFrom('Codeception');
+?>
+```
+     
+### dontSeeInLastInstantMessageFrom
+Checks whether the last messages from address does not match.
+
+```php
+<?php
+$I->dontSeeInLastInstantMessageFrom('Codeception');
+?>
+```
+
+### grabLastInstantMessageContent
+Grabber method to return the content/text of the last message.
+
+```php
+<?php
+$from = $this->grabLastInstantMessageContent();
+?>
+```
+      
+### seeInLastInstantMessageContent
+Checks whether the last messages content/text matches.
+
+```php
+<?php
+$I->seeInLastInstantMessageContent('Hello this is the messages I am expecting to see.');
+?>
+```
+
+### dontSeeInLastInstantMessageContent
+Checks whether the last messages content/text does not match.
+
+```php
+<?php
+$I->dontSeeInLastInstantMessageContent('Hello this is the messages I am not expecting to see.');
+?>
+```
+
+### grabLastInstantMessageColor
+Grabber method to return the color of the last message.
+
+```php
+<?php
+$from = $this->grabLastInstantMessageColor();
+?>
+```
+
+### seeInLastInstantMessageColor
+Checks whether the last messages color matches.
+
+```php
+<?php
+$I->seeInLastInstantMessageColor('red');
+?>
+```
+
+### dontSeeInLastInstantMessageColor
+Checks whether the last messages color does not match.
+
+```php
+<?php
+$I->dontSeeInLastInstantMessageColor('red');
+?>
+```
+
+### grabLastInstantMessageDate
+Grabber method to return the date/time of the last message.
+
+```php
+<?php
+$from = $this->grabLastInstantMessageDate();
+?>
+```
+
+### seeInLastInstantMessageDate
+Checks whether the last messages date matches.
+
+```php
+<?php
+$I->seeInLastInstantMessageDate('2014-10-13T16:30:48.657455+00:00');
+?>
+```
+
+### dontSeeInLastInstantMessageDate
+Checks whether the last messages date does not match.
+
+```php
+<?php
+$I->dontSeeInLastInstantMessageDate('2015-11-13T16:30:48.657455+00:00');
+?>
+```
 
 # License
 
