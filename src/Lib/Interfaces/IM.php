@@ -1,7 +1,7 @@
 <?php
 namespace Codeception\Lib\Interfaces;
 
-interface IM {
+interface IMInterface {
 
     /**
      * Connect to the IM service.

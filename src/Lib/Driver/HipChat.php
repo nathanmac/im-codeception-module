@@ -1,9 +1,9 @@
 <?php
 namespace Codeception\Lib\Driver;
 
-use Codeception\Lib\Interfaces\IM;
+use Codeception\Lib\Interfaces\IMInterface;
 
-class HipChat implements IM
+class HipChat implements IMInterface
 {
 
     protected $client;
