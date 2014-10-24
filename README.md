@@ -97,7 +97,7 @@ Grabber method to return the from field of the last message.
 
 ```php
 <?php
-$from = $this->grabLastInstantMessageFrom();
+$from = $I>grabLastInstantMessageFrom();
 ?>
 ```
      
@@ -124,7 +124,7 @@ Grabber method to return the content/text of the last message.
 
 ```php
 <?php
-$from = $this->grabLastInstantMessageContent();
+$content = $I->grabLastInstantMessageContent();
 ?>
 ```
       
@@ -151,7 +151,7 @@ Grabber method to return the color of the last message.
 
 ```php
 <?php
-$from = $this->grabLastInstantMessageColor();
+$color = $I->grabLastInstantMessageColor();
 ?>
 ```
 
@@ -178,7 +178,7 @@ Grabber method to return the date/time of the last message.
 
 ```php
 <?php
-$from = $this->grabLastInstantMessageDate();
+$date = $I->grabLastInstantMessageDate();
 ?>
 ```
 
