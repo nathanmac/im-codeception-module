@@ -1,6 +1,9 @@
 Codeception Instant Messaging (IM) Module
 =========================================
 
+[![Latest Stable Version](https://poser.pugx.org/nathanmac/im-codeception-module/v/stable.svg)](https://packagist.org/packages/nathanmac/im-codeception-module)
+[![License](https://poser.pugx.org/nathanmac/im-codeception-module/license.svg)](https://packagist.org/packages/nathanmac/im-codeception-module)
+
 This module will let you test messages that are sent during your Codeception
 acceptance tests.
 
