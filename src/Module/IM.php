@@ -82,7 +82,7 @@ class IM extends Module
     }
 
     /**
-     * @return \Codeception\Lib\Interfaces\IM
+     * @return \Codeception\Lib\Interfaces\IMInterface
      * @throws ModuleConfig
      */
     protected function createIMDriver()

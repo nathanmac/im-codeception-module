@@ -125,7 +125,7 @@ class HipChat implements IMInterface
      */
     public function getRequiredConfig()
     {
-        return ['token', 'room'];
+        return ['service', 'token', 'room'];
     }
 
     /**
